@@ -1,14 +1,14 @@
 #!/bin/sh
 #
 # This script should be run via curl:
-#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/chetannaik/pidotfiles/install.sh)"
+#   sh -c "$(curl -fsSL https://raw.githubusercontent.com/chetannaik/pidotfiles/main/install.sh)"
 # or via wget:
-#   sh -c "$(wget -qO- https://raw.githubusercontent.com/chetannaik/pidotfiles/install.sh)"
+#   sh -c "$(wget -qO- https://raw.githubusercontent.com/chetannaik/pidotfiles/main/install.sh)"
 # or via fetch:
-#   sh -c "$(fetch -o - https://raw.githubusercontent.com/chetannaik/pidotfiles/install.sh)"
+#   sh -c "$(fetch -o - https://raw.githubusercontent.com/chetannaik/pidotfiles/main/install.sh)"
 #
 # As an alternative, you can first download the install script and run it afterwards:
-#   wget https://raw.githubusercontent.com/chetannaik/pidotfiles/install.sh
+#   wget https://raw.githubusercontent.com/chetannaik/pidotfiles/main/install.sh
 #   sh install.sh
 #
 set -e
@@ -35,7 +35,7 @@ ZSH_BRANCH=${ZSH_BRANCH:-master}
 DOTFILES="${DOTFILES:-$HOME/pidotfiles}"
 DOTFILES_REPO=${DOTFILES_REPO:-chetannaik/pidotfiles}
 DOTFILES_REMOTE=${DOTFILES_REMOTE:-https://github.com/${DOTFILES_REPO}.git}
-DOTFILES_BRANCH=${DOTFILES_BRANCH:-master}
+DOTFILES_BRANCH=${DOTFILES_BRANCH:-main}
 
 
 command_exists() {
